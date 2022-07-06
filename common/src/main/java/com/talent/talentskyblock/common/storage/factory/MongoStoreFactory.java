@@ -1,28 +1,28 @@
-package com.talent.talentskyblock.common.data.factory;
+package com.talent.talentskyblock.common.storage.factory;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
-import com.talent.talentskyblock.common.data.StoreFactory;
-import com.talent.talentskyblock.common.data.store.MongoStore;
-import com.talent.talentskyblock.common.data.Store;
+import com.talent.talentskyblock.common.storage.store.MongoStorage;
+import com.talent.talentskyblock.common.storage.Storage;
+import com.talent.talentskyblock.common.storage.StorageFactory;
+
 import com.talent.talentskyblock.common.util.Assert;
 
 import java.util.Map;
-
 /**
  * @author Furkan Doğan
  */
 @SuppressWarnings("SpellCheckingInspection")
-public class MongoStoreFactory implements StoreFactory {
+public class MongoStoreFactory implements StorageFactory {
 
   @Override
-  public Store build(Map<String, Object> options) {
+  public Storage build(Map<String, Object> options) {
     this.checkPreconditions(options);
 
     String connectionString = this.buildConnectionString(options);
     MongoClient mongoClient = MongoClients.create(connectionString);
 
-    return new MongoStore(mongoClient);
+    return new MongoStorage(mongoClient);
   }
 
   private String buildConnectionString(Map<String, Object> options) {

@@ -1,21 +1,20 @@
-package com.talent.talentskyblock.common.data.factory;
+package com.talent.talentskyblock.common.storage.factory;
 
-import com.talent.talentskyblock.common.data.Store;
-import com.talent.talentskyblock.common.data.StoreFactory;
-import com.talent.talentskyblock.common.data.store.MySQLStore;
+import com.talent.talentskyblock.common.storage.store.MySQLStorage;
+import com.talent.talentskyblock.common.storage.Storage;
+import com.talent.talentskyblock.common.storage.StorageFactory;
 import com.talent.talentskyblock.common.util.Assert;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.Map;
-
 /**
  * @author Furkan Doğan
  */
-public class MySQLStoreFactory implements StoreFactory {
+public class MySQLStorageFactory implements StorageFactory {
 
   @Override
-  public Store build(Map<String, Object> options) {
+  public Storage build(Map<String, Object> options) {
     this.checkPreconditions(options);
 
     try {
@@ -26,7 +25,7 @@ public class MySQLStoreFactory implements StoreFactory {
       Class.forName("com.mysql.jdbc.Driver");
       Connection connection = DriverManager.getConnection(connectionString, user, password);
 
-      return new MySQLStore(connection);
+      return new MySQLStorage(connection);
     } catch (Exception e) {
       throw new RuntimeException(e);
     }

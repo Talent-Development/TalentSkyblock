@@ -1,5 +1,4 @@
-package com.talent.talentskyblock.common.domain;
-
+package com.talent.talentskyblock.common.storage.domain;
 /**
  * @author Furkan Doğan
  */
