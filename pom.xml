@@ -9,7 +9,6 @@
   <packaging>pom</packaging>
 
   <modules>
-
     <module>api</module>
     <module>common</module>
     <module>bukkit</module>

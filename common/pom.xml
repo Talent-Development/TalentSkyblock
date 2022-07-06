@@ -19,5 +19,11 @@
       <artifactId>mongodb-driver-sync</artifactId>
       <version>4.6.1</version>
     </dependency>
+
+    <dependency>
+      <groupId>biz.paluch.redis</groupId>
+      <artifactId>lettuce</artifactId>
+      <version>3.2.Final</version>
+    </dependency>
   </dependencies>
 </project>
