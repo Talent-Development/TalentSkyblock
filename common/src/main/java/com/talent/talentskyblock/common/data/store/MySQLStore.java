@@ -19,7 +19,7 @@ public class MySQLStore implements Store {
   }
 
   @Override
-  public void close() {
-
+  public void close() throws Exception {
+    this.connection.close();
   }
 }
