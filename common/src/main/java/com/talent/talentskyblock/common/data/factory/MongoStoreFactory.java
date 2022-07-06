@@ -2,9 +2,9 @@ package com.talent.talentskyblock.common.data.factory;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
+import com.talent.talentskyblock.common.data.Store;
 import com.talent.talentskyblock.common.data.StoreFactory;
 import com.talent.talentskyblock.common.data.store.MongoStore;
-import com.talent.talentskyblock.common.data.Store;
 import com.talent.talentskyblock.common.util.Assert;
 
 import java.util.Map;
