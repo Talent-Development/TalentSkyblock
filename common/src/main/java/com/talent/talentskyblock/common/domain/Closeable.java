@@ -5,5 +5,5 @@ package com.talent.talentskyblock.common.domain;
  */
 public interface Closeable {
 
-  void close();
+  void close() throws Exception;
 }
