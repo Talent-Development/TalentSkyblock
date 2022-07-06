@@ -1,6 +1,6 @@
-package com.talent.talentskyblock.common.data.store;
+package com.talent.talentskyblock.common.storage.storages;
 
-import com.talent.talentskyblock.common.data.Store;
+import com.talent.talentskyblock.common.storage.Storage;
 import com.talent.talentskyblock.common.util.Assert;
 
 import java.sql.Connection;
@@ -9,11 +9,11 @@ import java.util.Map;
 /**
  * @author Furkan Doğan
  */
-public class MySQLStore implements Store {
+public class MySQLStorage implements Storage {
 
   private final Connection connection;
 
-  public MySQLStore(Connection connection) {
+  public MySQLStorage(Connection connection) {
     Assert.notNull(connection, "Connection cannot be null");
     this.connection = connection;
   }

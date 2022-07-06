@@ -1,6 +1,6 @@
 package com.talent.talentskyblock.common.storage.factory;
 
-import com.talent.talentskyblock.common.storage.store.MySQLStorage;
+import com.talent.talentskyblock.common.storage.storages.MySQLStorage;
 import com.talent.talentskyblock.common.storage.Storage;
 import com.talent.talentskyblock.common.storage.StorageFactory;
 import com.talent.talentskyblock.common.util.Assert;

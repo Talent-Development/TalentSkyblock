@@ -2,7 +2,7 @@ package com.talent.talentskyblock.common.storage.factory;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
-import com.talent.talentskyblock.common.storage.store.MongoStorage;
+import com.talent.talentskyblock.common.storage.storages.MongoStorage;
 import com.talent.talentskyblock.common.storage.Storage;
 import com.talent.talentskyblock.common.storage.StorageFactory;
 import com.talent.talentskyblock.common.util.Assert;

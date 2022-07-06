@@ -1,4 +1,4 @@
-package com.talent.talentskyblock.common.storage.store;
+package com.talent.talentskyblock.common.storage.storages;
 
 import com.mongodb.client.MongoClient;
 import com.talent.talentskyblock.common.storage.Storage;
