@@ -1,11 +1,13 @@
 package com.talent.talentskyblock.api;
 
-import com.google.common.base.Preconditions;
 import java.util.Objects;
+
+import com.talent.talentskyblock.common.util.Assert;
 import lombok.experimental.UtilityClass;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+@SuppressWarnings("SpellCheckingInspection")
 @UtilityClass
 public class Provider {
 
@@ -20,6 +22,7 @@ public class Provider {
    *
    * @return skyblock.
    */
+  @SuppressWarnings("unused")
   @NotNull
   public Skyblock skyblock() {
     return Objects.requireNonNull(Provider.skyblock, "The skyblock not set yet!");
@@ -33,8 +36,7 @@ public class Provider {
    * @throws IllegalStateException if the skyblock is already set.
    */
   public void skyblock(@NotNull final Skyblock skyblock) {
-    Preconditions.checkState(Provider.skyblock == null,
-      "The skyblock has been set already!", Provider.skyblock);
+    Assert.isTrue(Provider.skyblock == null, "The skyblock has been set already!");
     Provider.skyblock = skyblock;
   }
 }

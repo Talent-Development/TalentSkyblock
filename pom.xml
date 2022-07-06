@@ -5,8 +5,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.talent.talentskyblock</groupId>
   <artifactId>talent-skyblock</artifactId>
-  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
   <modules>
     <module>plugin</module>
     <module>api</module>
