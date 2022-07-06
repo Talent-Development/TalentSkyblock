@@ -5,7 +5,6 @@ import com.mongodb.client.MongoClients;
 import com.talent.talentskyblock.common.storage.store.MongoStorage;
 import com.talent.talentskyblock.common.storage.Storage;
 import com.talent.talentskyblock.common.storage.StorageFactory;
-
 import com.talent.talentskyblock.common.util.Assert;
 
 import java.util.Map;
@@ -13,7 +12,7 @@ import java.util.Map;
  * @author Furkan Doğan
  */
 @SuppressWarnings("SpellCheckingInspection")
-public class MongoStoreFactory implements StorageFactory {
+public class MongoStorageFactory implements StorageFactory {
 
   @Override
   public Storage build(Map<String, Object> options) {
