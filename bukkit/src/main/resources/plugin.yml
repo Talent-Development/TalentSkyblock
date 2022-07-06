@@ -1,0 +1,5 @@
+name: TalentSkyblock
+main: com.talent.talentskyblock.plugin.TalentSkyblockPlugin
+version: 1.0.0
+api-version: 1.18
+commands:
